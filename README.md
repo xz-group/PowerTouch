@@ -49,15 +49,21 @@ with [BNC Adapter board](https://digilent.com/shop/bnc-adapter-for-analog-discov
 
 
 * Our `customized noise injection PCB`: source design files are available in [hardware](./hardware) folder.
-  ![pcb](./hardware/main_front.png)
+  ![pcb](./hardware/powertouch_pcb_top.png)
+  * The board is powered by 5V through `5V` and `GND` pins. 
+  * It contains four RF relay ([9814-500 relay](https://www.digikey.com/en/products/detail/coto-technology/9814-05-00/586522)) channels: CH1, CH2, CH3, and CH4.
+    * `CH1` is used to capture the TX excitation signal of the touchscreen. It is connected to the `SHIELD` of USB connector.
+    * `CH2` is used to inject high-voltage noise signal to the touchscreen. It is connected to the `SHIELD` of USB connector.
+    * `CH3` and `CH4` are used to charge the smartphone when conducting the experiments. They are connected to the `VBUS` and `VGND` of USB connector, respectively.
+  * The relays are controlled through `EN_CH1`, `EN_CH2`, `EN_CH3`, `EN_CH4` pins, respectively. High enables (>=3.3V) the relays, and low disables the relays.
+  * `CH1` and `CH2` are connected outside the PCB through `BNC` connectors. The `SMA` connectors. `SHIELD` is connected outside the PCB through `BNC` connectors. 
 
 
 * `Power supply`: this is used to power the high-voltage amplifier module and charge the smartphone (if enable charging the phone feature). We use [Keithley 2231A-30-3 Triple-channel DC Power Supply](https://www.tek.com/en/products/keithley/dc-power-supplies/2220-2230-2231-series).
 
 
-## File Structure
- * `hardware`: contains the hardware files for the PowerTouch framework
- * `PowerTouch`: contains the source code for the PowerTouch framework
+* `Metal sheet`: to be connected to the `EARTH` of the wall outlet. This is used to build the true ground plane for converting the noise from differential mode to common mode.
+We use [this one](https://a.co/d/iU6o7kK) for this project.
 
 
 ## How to Use
