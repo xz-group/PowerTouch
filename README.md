@@ -49,7 +49,7 @@ with [BNC Adapter board](https://digilent.com/shop/bnc-adapter-for-analog-discov
 
 
 * Our `customized noise injection PCB`: source design files are available in [hardware](./hardware) folder.
-  * To be updated.
+  ![pcb](./hardware/main_front.png)
 
 
 * `Power supply`: this is used to power the high-voltage amplifier module and charge the smartphone (if enable charging the phone feature). We use [Keithley 2231A-30-3 Triple-channel DC Power Supply](https://www.tek.com/en/products/keithley/dc-power-supplies/2220-2230-2231-series).
