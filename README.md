@@ -4,8 +4,6 @@ A Genetic Algorithm-based framework that can automatically generate `wired ghost
 
 ## About this work
 
-To be updated.  
-
 For more details, please refer to our **ICCAD'22** paper: [_PowerTouch: A Security Objective-Guided Automation Framework
 for Generating Wired Ghost Touch Attacks on Touchscreens_](ICCAD2022_PowerTouch.pdf).
 
@@ -68,15 +66,20 @@ We use [this one](https://a.co/d/iU6o7kK) for this project.
 
 ## How to Use
 
-To be updated.
-
+Please refer to the example usage code in `PowerTouch/example_usage_code` folder for details.
 
 ## Citation
 
 If you use this framework for your research, please cite our [ICCAD'22 paper](ICCAD2022_PowerTouch.pdf):
 
 ```
-To be updated
+@inproceedings{zhu2022powertouch,
+  title={PowerTouch: A Security Objective-Guided Automation Framework for Generating Wired Ghost Touch Attacks on Touchscreens},
+  author={Zhu, Huifeng and Yu, Zhiyuan and Cao, Weidong and Zhang, Ning and Zhang, Xuan},
+  booktitle={Proceedings of the 41st IEEE/ACM International Conference on Computer-Aided Design},
+  pages={1--9},
+  year={2022}
+}
 ```
 
 ## Contact Information
